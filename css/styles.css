@@ -1,0 +1,202 @@
+:root {
+  --azul-oscuro: #0a1a2f;
+  --azul-medio: #1e4d8a;
+  --azul-claro: #5ca0f2;
+  --blanco: #ffffff;
+  --gris-claro: #f5f7fa;
+  --texto: #222;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--gris-claro);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--azul-oscuro);
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--azul-claro);
+}
+
+/* HERO */
+
+.hero {
+  background: var(--azul-medio);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+
+.hero h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* CONTENT */
+
+.content {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.content h3 {
+  margin-bottom: 2rem;
+}
+
+.content h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+.autor-nota {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.autor-nota p {
+  margin-bottom: 0.3rem;
+}
+
+.autor-nota strong {
+  font-weight: 700;
+}
+
+.autor-rol {
+  font-style: italic;
+  color: #555;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--azul-oscuro);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  background: var(--azul-medio);
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: var(--azul-oscuro);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.submenu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu-toggle {
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--azul-oscuro);
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  min-width: 160px;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.submenu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.submenu a:hover {
+  background-color: var(--azul-medio);
+}
+
+.submenu-container:hover .submenu {
+  display: flex;
+}
